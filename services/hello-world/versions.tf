@@ -16,3 +16,7 @@ terraform {
 provider "github" {
     owner = "ntsedemoorg"
 }
+
+provider "aws" {
+  region = "eu-west-1"
+}
