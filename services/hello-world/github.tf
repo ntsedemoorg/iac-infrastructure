@@ -18,6 +18,6 @@ import {
 }
 
 import {  
-  to = module.github_application.github_infrastructure.repository
+  to = module.github_infrastructure.github_repository.repository
   id = "ntsedemoorg/hello-world-infra"
 }
