@@ -2,11 +2,8 @@ name: Run Terraform for Services
 
 on:
   push:
-    paths:
-      - 'services/**'
-  pull_request:
-    paths:
-      - 'services/**'
+    branches:
+      - main
 
 jobs:
   terraform:
