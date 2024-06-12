@@ -20,9 +20,9 @@ module "github_infrastructure" {
   description = "Infrastructure code for the hello-world project"
 }
 
-import {  
-  to = module.github_application.github_repository.repository
-  id = "hello-world"
+moved {  
+  from = module.github_application
+  to = module.github_application_front
 }
 
 import {  
