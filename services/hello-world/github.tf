@@ -14,10 +14,10 @@ module "github_infrastructure" {
 
 import {  
   to = module.github_application.github_repository.repository
-  id = "hello-world"
+  id = "ntsedemoorg/hello-world"
 }
 
 import {  
   to = module.github_application.github_infrastructure.repository
-  id = "hello-world-infra"
+  id = "ntsedemoorg/hello-world-infra"
 }
