@@ -11,3 +11,13 @@ module "github_infrastructure" {
   name = "hello-world-infra"
   description = "Infrastructure code for the hello-world service"
 }
+
+import {  
+  to = module.github_application.github_repository.repository
+  id = "hello-world"
+}
+
+import {  
+  to = module.github_application.github_infrastructure.repository
+  id = "hello-world-infra"
+}
