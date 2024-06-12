@@ -6,7 +6,7 @@ module "bootstrap_s3_backend" {
 }
 
 import {  
-  to = module.github_infrastructure.bootstrap_s3_backend.repository
+  to = module.bootstrap_s3_backend.github_repository.repository
   id = "bootstrap-s3-backend"
 }
 
@@ -18,7 +18,7 @@ module "terraform_github_repo" {
 }
 
 import {  
-  to = module.github_infrastructure.terraform_github_repo.repository
+  to = module.terraform_github_repo.github_repository.repository
   id = "terraform-github-repo"
 }
 
@@ -30,6 +30,6 @@ module "iac_infrastructure" {
 }
 
 import {  
-  to = module.github_infrastructure.iac_infrastructure.repository
+  to = module.iac_infrastructure.github_repository.repository
   id = "iac-infrastructure"
 }
