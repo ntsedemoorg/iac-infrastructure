@@ -33,3 +33,11 @@ import {
   to = module.iac_infrastructure.github_repository.repository
   id = "iac-infrastructure"
 }
+
+module "github_repo_template" {
+  source                  = "git::https://github.com/ntsedemoorg/terraform-github-repo.git"
+
+  name = "github-repo-template"
+  description = "Github repo used as a template for other Github repos"
+  is_template = true
+}
