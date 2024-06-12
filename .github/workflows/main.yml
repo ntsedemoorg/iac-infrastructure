@@ -20,6 +20,8 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Iterate through subdirectories and run Terraform
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PA }}
         run: |
           find services -mindepth 1 -maxdepth 1 -type d | while read dir; do
             echo "Processing $dir"
