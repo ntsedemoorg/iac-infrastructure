@@ -1,11 +1,11 @@
-module "github_application" {
+module "github_application_front" {
   source                  = "git::https://github.com/ntsedemoorg/terraform-github-repo.git"
 
   name = "hello-world-front"
   description = "Application code for hello-world-front in the hello-world project"
 }
 
-module "github_application" {
+module "github_application_api" {
   source                  = "git::https://github.com/ntsedemoorg/terraform-github-repo.git"
 
   name = "hello-world-api"
