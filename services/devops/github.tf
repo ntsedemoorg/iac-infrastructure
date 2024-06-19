@@ -41,3 +41,11 @@ module "github_repo_template" {
   description = "Github repo used as a template for other Github repos"
   is_template = true
 }
+
+
+module "github_actions_reusable_actions" {
+  source                  = "git::https://github.com/ntsedemoorg/terraform-github-repo.git"
+
+  name = "github-actions-reusable-actions"
+  description = "Reusable Github Actions"
+}
